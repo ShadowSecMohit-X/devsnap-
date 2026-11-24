@@ -1,2 +1,19 @@
-# devsnap-
+# DevSnap-
 time saving project for developers 
+
+INTRODUCTION OF PROJECT --
+
+DevSnap --- a developer tool that saves a snapshot of your active workspace (open folders, links/tabs and terminal commands) and allow you to restore it with a single command or click 
+
+WHY I'M BUILDING IT ----
+
+When you shut down your development setup after finishing your work , you might not remember exactly which files or tabs you had open when you return and start it up again. This is where DevSnap comes in by clicking on "snapshot" it captures the state of your workspace. When you return later, a single click restores all those same files, tabs and links. This save developers time and eliminates the need to manually keep track of which files and tabs were previously open. 
+
+PLANNED FEATURES ---
+
+1 Saving a workspace snapshot (with a custom profile name)
+2 viewing alist of saved snapshots 
+3 instantly restoring any snapshot 
+4 deleting or updating old snapshot
+
+STATUS -- currently in active development
