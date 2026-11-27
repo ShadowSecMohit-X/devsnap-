@@ -16,4 +16,16 @@ PLANNED FEATURES ---
 3 instantly restoring any snapshot 
 4 deleting or updating old snapshot
 
-STATUS -- currently in active development
+## PROJECT STRUCTURE
+
+- `storage.py` - Local JSON storage helper for saving and loading snapshots.
+- `snapshot_ops.py` - Core logic for saving, listing, restoring, and deleting snapshots.
+  - `devsnap.py` - CLI entry point for handling user commands.
+
+ ## USAGE 
+
+ ```bash
+python3 devsnap.ppy save <name>
+python3 devsnap.py list 
+python3 devsnap.py restore <name>
+python3 devsnap.py delete <name>
