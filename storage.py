@@ -5,7 +5,7 @@ DATA_FILE = "snapshots.json"
 
 
 def load_snapshots():
-    if not  os.path.exits(DATA_FILE):
+    if not  os.path.exists(DATA_FILE):
         return {}
     try:
         with open(DATA_FILE, "r", encoding="utf-8") as file:

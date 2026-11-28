@@ -1,31 +1,34 @@
-# DevSnap-
-time saving project for developers 
+# DevSnap
 
-INTRODUCTION OF PROJECT --
+**DevSnap** is a lightweight pytho CLI tool to save and quickly restore developer workspaces-including workspace folder, refrence URLs, and terminal commmands-using a local JSON store.
 
-DevSnap --- a developer tool that saves a snapshot of your active workspace (open folders, links/tabs and terminal commands) and allow you to restore it with a single command or click 
+## Project Sturcture
 
-WHY I'M BUILDING IT ----
+- `devsnap.py`- CLI entry poitn and argument/command routing (`save`, `list`, `resotre`, `delete`, `help`).
+- `snapshot_ops.py` - core logic for saving listing, restoring, and deleting snapshots.
+- `storage.py` - JSON file read/write helper for presisting snapshot locally.
 
-When you shut down your development setup after finishing your work , you might not remember exactly which files or tabs you had open when you return and start it up again. This is where DevSnap comes in by clicking on "snapshot" it captures the state of your workspace. When you return later, a single click restores all those same files, tabs and links. This save developers time and eliminates the need to manually keep track of which files and tabs were previously open. 
 
-PLANNED FEATURES ---
+## usage
 
-1 Saving a workspace snapshot (with a custom profile name)
-2 viewing alist of saved snapshots 
-3 instantly restoring any snapshot 
-4 deleting or updating old snapshot
+Run commands from the project folder:
 
-## PROJECT STRUCTURE
-
-- `storage.py` - Local JSON storage helper for saving and loading snapshots.
-- `snapshot_ops.py` - Core logic for saving, listing, restoring, and deleting snapshots.
-  - `devsnap.py` - CLI entry point for handling user commands.
-
- ## USAGE 
-
- ```bash
-python3 devsnap.ppy save <name>
+``` bash 
+python3 devsnap.py save work
 python3 devsnap.py list 
-python3 devsnap.py restore <name>
-python3 devsnap.py delete <name>
+python3 devsnap.py restore work 
+python3 devsnap.py delete work
+
+
+FEATURES-->
+
+1 Save named workspace snapshots woth an optional folder path, URLs and setup commands
+
+2 List all saved snapshot bu opening the target folder,launching and item. counts.
+
+3 Resotre a workspace by opening the target folder,alaunching saved URls, and optionally running saved commands.
+
+4 Delete snapshots that are no linger needed.
+
+
+work in progresss ---- sorry for the dealy 
